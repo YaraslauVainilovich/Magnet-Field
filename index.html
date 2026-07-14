@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magnet Field — Design System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="intro-panel">
+      <div>
+        <p class="eyebrow">Design system / mobile game UI</p>
+        <h1><span class="brand-positive">Magnet</span> <span class="brand-negative">Field</span></h1>
+        <p class="intro-text">Мягкий минималистичный puzzle-стиль: светлый фон, красные положительные заряды, синие отрицательные, серые нейтральные плитки.</p>
+      </div>
+      <img class="app-icon-preview" src="assets/icon.svg" alt="Magnet Field app icon" />
+    </section>
+
+    <section class="screens-grid" aria-label="Screens">
+      <article class="phone-frame menu-screen">
+        <div class="soft-cloud cloud-a"></div>
+        <div class="soft-cloud cloud-b"></div>
+
+        <header class="menu-header">
+          <h2><span class="brand-positive">Magnet</span><br><span class="brand-negative">Field</span></h2>
+          <p>Find balance. Create bigger values.</p>
+        </header>
+
+        <div class="hero-field">
+          <img class="field-lines" src="assets/field-lines.svg" alt="" />
+          <div class="tile tile-positive hero-tile hero-positive">+</div>
+          <div class="tile tile-negative hero-tile hero-negative">−</div>
+        </div>
+
+        <button class="button button-primary">Play <span class="button-arrow">▶</span></button>
+        <button class="button button-secondary">Daily Challenge <span class="small-icon">▣</span></button>
+
+        <nav class="menu-actions" aria-label="Secondary actions">
+          <button class="round-action"><span>▥</span><small>Stats</small></button>
+          <button class="round-action"><span>?</span><small>How to Play</small></button>
+          <button class="round-action"><span>⚙</span><small>Settings</small></button>
+        </nav>
+
+        <section class="feature-list">
+          <div><span class="dot dot-positive">+</span><p><strong>Strategic Puzzle</strong><br>Plan merges and master the field.</p></div>
+          <div><span class="dot dot-negative">−</span><p><strong>Physics-Inspired</strong><br>Positive and negative charges interact.</p></div>
+          <div><span class="dot dot-neutral">0</span><p><strong>Neutral Tiles</strong><br>Balanced cells act as buffers.</p></div>
+        </section>
+      </article>
+
+      <article class="phone-frame game-screen">
+        <header class="game-header">
+          <button class="icon-button"><img src="assets/icon-menu.svg" alt="Menu" /></button>
+          <div class="score-card"><small>Best</small><strong>12,480</strong></div>
+          <div class="score-card"><small>Score</small><strong>2,160</strong></div>
+        </header>
+
+        <section class="field-meter positive-meter">
+          <span class="charge-badge positive-badge">+</span>
+          <div>
+            <p>Positive Charge</p>
+            <div class="meter-track"><i></i><i></i><i></i><i></i><em></em><em></em></div>
+          </div>
+        </section>
+
+        <section class="board board-4" aria-label="Game board">
+          <div class="tile tile-positive">+2</div>
+          <div class="tile tile-positive">+2</div>
+          <div class="tile tile-negative">−2</div>
+          <div class="tile tile-positive tile-strong">+4</div>
+          <div class="tile tile-negative">−2</div>
+          <div class="cell-empty">0</div>
+          <div class="tile tile-positive">+2</div>
+          <div class="tile tile-negative">−2</div>
+          <div class="tile tile-positive tile-strong">+4</div>
+          <div class="tile tile-negative tile-strong">−4</div>
+          <div class="cell-empty">0</div>
+          <div class="tile tile-positive tile-strong">+4</div>
+          <div class="tile tile-negative">−2</div>
+          <div class="tile tile-neutral">2</div>
+          <div class="tile tile-neutral tile-strong">8</div>
+          <div class="tile tile-negative">−2</div>
+        </section>
+
+        <section class="field-meter negative-meter">
+          <span class="charge-badge negative-badge">−</span>
+          <div>
+            <div class="meter-track"><i></i><i></i><i></i><i></i><em></em><em></em></div>
+            <p>Negative Charge</p>
+          </div>
+        </section>
+
+        <aside class="hint-panel">
+          <div class="gesture">← <span>☝</span> →</div>
+          <p>Swipe to shift tiles<br>with the field</p>
+        </aside>
+
+        <footer class="bottom-actions">
+          <button class="icon-label-button"><img src="assets/icon-undo.svg" alt="" /><span>Undo</span></button>
+          <button class="icon-label-button"><img src="assets/icon-hint.svg" alt="" /><span>Hint</span><b>3</b></button>
+          <button class="icon-label-button"><img src="assets/icon-reset.svg" alt="" /><span>Reset</span></button>
+        </footer>
+      </article>
+    </section>
+
+    <section class="system-section">
+      <h2>Цветовая палитра</h2>
+      <div class="palette-grid">
+        <div class="swatch" style="--sw:#F7F0E3"><b>Background</b><span>#F7F0E3</span></div>
+        <div class="swatch" style="--sw:#FFF8EC"><b>Surface</b><span>#FFF8EC</span></div>
+        <div class="swatch" style="--sw:#E36F5E"><b>Positive</b><span>#E36F5E</span></div>
+        <div class="swatch" style="--sw:#6E95AB"><b>Negative</b><span>#6E95AB</span></div>
+        <div class="swatch" style="--sw:#CFC6B8"><b>Neutral</b><span>#CFC6B8</span></div>
+        <div class="swatch" style="--sw:#4D4740"><b>Text</b><span>#4D4740</span></div>
+      </div>
+    </section>
+
+    <section class="system-section two-column">
+      <div>
+        <h2>Плитки</h2>
+        <div class="component-row">
+          <div class="tile tile-positive">+2</div>
+          <div class="tile tile-negative">−2</div>
+          <div class="tile tile-neutral">2</div>
+          <div class="cell-empty">0</div>
+        </div>
+      </div>
+      <div>
+        <h2>Кнопки и состояния</h2>
+        <div class="component-stack">
+          <button class="button button-primary">Primary</button>
+          <button class="button button-secondary">Secondary</button>
+          <button class="button button-secondary is-disabled">Disabled</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="system-section rules-section">
+      <h2>Правила клеток</h2>
+      <div class="rules-grid">
+        <article><span class="dot dot-positive">+</span><h3>Positive</h3><p>Красный/коралловый цвет. Знак обязателен. Одинаковый заряд и номинал дают плитку ×2 того же заряда.</p></article>
+        <article><span class="dot dot-negative">−</span><h3>Negative</h3><p>Синий приглушенный цвет. Использовать математический минус. Одинаковые отрицательные значения сливаются в отрицательную плитку ×2.</p></article>
+        <article><span class="dot dot-neutral">0</span><h3>Neutral</h3><p>Серая спокойная плитка. Рекомендуемое отображение — число без знака. Нейтральная клетка не конкурирует с активными зарядами.</p></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

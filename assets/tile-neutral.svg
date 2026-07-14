@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Neutral tile">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8E2D6"/><stop offset="1" stop-color="#CFC6B8"/></linearGradient></defs>
+  <rect x="16" y="16" width="224" height="224" rx="42" fill="url(#g)" stroke="#BFB6A8" stroke-width="6"/>
+  <rect x="28" y="28" width="200" height="12" rx="6" fill="#FFFDF7" opacity="0.26"/>
+  <text x="128" y="148" text-anchor="middle" dominant-baseline="middle" font-family="Nunito Sans, Avenir Next, sans-serif" font-size="86" font-weight="900" fill="#FFFDF7">2</text>
+</svg>
