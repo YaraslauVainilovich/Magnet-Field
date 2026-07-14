@@ -174,12 +174,11 @@ h1 {
   z-index: 2;
 }
 
-.menu-header h2 {
-  margin: 36px 0 8px;
-  font-family: var(--font-display);
-  font-size: clamp(48px, 6vw, 78px);
-  line-height: 0.86;
-  letter-spacing: 0.02em;
+.menu-logo {
+  display: block;
+  width: min(100%, 402px);
+  height: auto;
+  margin: 36px auto 8px;
 }
 
 .menu-header p {
