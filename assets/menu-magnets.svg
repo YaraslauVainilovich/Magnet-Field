@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-label="Magnetic field between opposite poles">
+  <defs>
+    <linearGradient id="fieldFlow" gradientUnits="userSpaceOnUse" x1="250" y1="0" x2="510" y2="0">
+      <stop offset="0" stop-color="#EC8A74"/>
+      <stop offset="0.4" stop-color="#EC8A74"/>
+      <stop offset="0.5" stop-color="#B89A91"/>
+      <stop offset="0.6" stop-color="#7C9FB2"/>
+      <stop offset="1" stop-color="#7C9FB2"/>
+    </linearGradient>
+    <filter id="groundShadow" x="-35%" y="-200%" width="170%" height="500%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <path id="heartShape" d="M0 5 C-4 -1 -13 0 -14 7 C-15 14 -8 19 1 25 C9 18 15 13 14 6 C13 -1 5 0 0 5 Z"/>
+    <marker id="fieldArrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 1.2 L10.5 6 L1 10.8 L3.3 6 Z" fill="#80625B" stroke="#FFF7EF" stroke-width="0.8" stroke-linejoin="round"/>
+    </marker>
+    <g id="magneticField" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Wide loops remain continuous and close the field above and below the characters. -->
+      <path d="M205 190 C205 72 275 24 380 24 C485 24 555 72 555 190" stroke-width="2.3" opacity="0.58" marker-mid="url(#fieldArrow)"/>
+      <path d="M246 182 C270 112 321 82 380 82 C439 82 490 112 514 182" stroke-width="2.65" opacity="0.72" marker-mid="url(#fieldArrow)"/>
+
+      <!-- Five connected lines show the direct attraction from positive to negative. -->
+      <path d="M274 186 C306 173 330 166 356 166 C405 164 449 171 486 186" stroke-width="2.7" opacity="0.78" marker-mid="url(#fieldArrow)"/>
+      <path d="M278 211 C316 203 361 201 405 203 C432 203 457 206 482 211" stroke-width="2.9" opacity="0.86" marker-mid="url(#fieldArrow)"/>
+      <path d="M282 238 C316 238 337 238 356 238 C402 238 440 238 478 238" stroke-width="3.15" opacity="0.94" marker-mid="url(#fieldArrow)"/>
+      <path d="M286 265 C321 272 365 275 405 273 C431 272 452 269 474 265" stroke-width="2.95" opacity="0.87" marker-mid="url(#fieldArrow)"/>
+      <path d="M284 291 C320 303 339 309 356 311 C401 314 438 307 476 291" stroke-width="2.75" opacity="0.79" marker-mid="url(#fieldArrow)"/>
+
+      <path d="M260 294 C280 348 326 374 380 374 C434 374 480 348 500 294" stroke-width="2.65" opacity="0.72" marker-mid="url(#fieldArrow)"/>
+      <path d="M220 286 C210 374 278 417 380 417 C482 417 550 374 540 286" stroke-width="2.3" opacity="0.58" marker-mid="url(#fieldArrow)"/>
+    </g>
+  </defs>
+
+  <!-- Opposite poles: every field line flows continuously from + to −. -->
+  <use href="#magneticField" stroke="url(#fieldFlow)"/>
+
+  <g fill="none" stroke="#FFFDF7" stroke-linecap="round" opacity="0.72">
+    <ellipse cx="193" cy="392" rx="174" ry="37" stroke-width="2.8"/>
+    <ellipse cx="193" cy="392" rx="128" ry="25" stroke-width="2.1"/>
+    <ellipse cx="567" cy="392" rx="174" ry="37" stroke-width="2.8"/>
+    <ellipse cx="567" cy="392" rx="128" ry="25" stroke-width="2.1"/>
+  </g>
+
+  <ellipse cx="192" cy="400" rx="110" ry="14" fill="#6D594B" opacity="0.22" filter="url(#groundShadow)"/>
+  <ellipse cx="568" cy="400" rx="110" ry="14" fill="#53616A" opacity="0.22" filter="url(#groundShadow)"/>
+
+  <!-- Opaque reference-style hearts. -->
+  <use href="#heartShape" transform="translate(160 70) rotate(-8) scale(0.9)" fill="#E77862"/>
+  <use href="#heartShape" transform="translate(600 68) rotate(8) scale(0.86)" fill="#E77862"/>
+  <use href="#heartShape" transform="translate(380 150) rotate(-4) scale(0.5)" fill="#AF9986"/>
+  <use href="#heartShape" transform="translate(380 278) rotate(5) scale(0.58)" fill="#E77862"/>
+</svg>
